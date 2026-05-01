@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Shivam Bavda — Front-End Developer Portfolio. Crafting beautiful, responsive, and performant web experiences." />
+  <title>Shivam Bavda | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════ CURSOR GLOW ═══════════════ -->
+  <div id="cursor-glow"></div>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="btn-hire" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Hire Me
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="Background" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Shivam Bavda</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="static-text">I build </span>
+          <span class="typed-wrapper">
+            <span id="typed-text" class="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </span>
+        </div>
+        <p class="hero-description">
+          A passionate Front-End Developer crafting stunning, responsive, and
+          performant web experiences. Turning ideas into pixel-perfect reality.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            View My Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="2">0</span><span>+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="20">0</span><span>+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span><span>+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" data-aos="fade-left">
+        <div class="profile-ring">
+          <div class="profile-ring-inner">
+            <img src="profile.png" alt="Shivam Bavda" class="profile-img" />
+          </div>
+        </div>
+        <div class="tech-badge badge-html">HTML5</div>
+        <div class="tech-badge badge-css">CSS3</div>
+        <div class="tech-badge badge-js">JS</div>
+        <div class="tech-badge badge-react">React</div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A brief introduction to the developer behind the code</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card" data-aos="fade-right">
+          <div class="about-code-block">
+            <div class="code-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-filename">shivam.js</span>
+            </div>
+            <pre class="code-body"><code><span class="code-const">const</span> <span class="code-var">shivam</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Shivam Bavda"</span>,
+  <span class="code-key">role</span>: <span class="code-str">"Front-End Developer"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"India 🇮🇳"</span>,
+  <span class="code-key">passion</span>: <span class="code-str">"Crafting Experiences"</span>,
+  <span class="code-key">skills</span>: [
+    <span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"JavaScript"</span>,
+    <span class="code-str">"React"</span>, <span class="code-str">"Responsive Design"</span>,
+  ],
+  <span class="code-key">available</span>: <span class="code-bool">true</span>,
+};</code></pre>
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-left">
+          <h3>Turning <span class="gradient-text">Visions</span> Into Digital Reality</h3>
+          <p>
+            I'm a dedicated Front-End Developer with a strong eye for design and a love
+            for clean, efficient code. I specialize in building modern, responsive web
+            applications that deliver exceptional user experiences.
+          </p>
+          <p>
+            Whether it's crafting smooth animations, optimizing performance, or
+            architecting scalable component libraries — I bring creativity and
+            technical precision to every project.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎨</div>
+              <div>
+                <strong>UI/UX Focus</strong>
+                <span>Pixel-perfect designs</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div>
+                <strong>Performance</strong>
+                <span>Optimized & fast</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">📱</div>
+              <div>
+                <strong>Responsive</strong>
+                <span>All screen sizes</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔧</div>
+              <div>
+                <strong>Clean Code</strong>
+                <span>Maintainable & scalable</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-primary" id="download-cv" onclick="return false;">
+            Download CV
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Tech Skills -->
+        <div class="skills-card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-card-title">
+            <span class="skills-icon">💻</span> Core Technologies
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95" style="--clr:#e34f26"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CSS3 / SCSS</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90" style="--clr:#264de4"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85" style="--clr:#f7df1e"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80" style="--clr:#61dafb"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-card" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-card-title">
+            <span class="skills-icon">🛠️</span> Tools & Frameworks
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88" style="--clr:#f05032"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Tailwind CSS</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82" style="--clr:#38bdf8"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Figma / Design</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75" style="--clr:#a259ff"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85" style="--clr:#7952b3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech pills -->
+      <div class="tech-pills" data-aos="fade-up">
+        <div class="pill">HTML5</div>
+        <div class="pill">JavaScript</div>
+        <div class="pill">React</div>
+        <div class="pill">Git</div>
+        <div class="pill">Tailwind</div>
+        <div class="pill">Bootstrap</div>
+        <div class="pill">Figma</div>
+        <div class="pill">VS Code</div>
+        <div class="pill">Responsive Design</div>
+        <div class="pill">REST API</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of recent work I'm proud of</p>
+      </div>
+
+      <div class="filter-btns" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+        <button class="filter-btn" data-filter="css">CSS</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="react" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <span class="project-emoji">🛒</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">CSS</span>
+              <span class="tag">API</span>
+            </div>
+            <h3 class="project-title">E-Commerce Store</h3>
+            <p class="project-desc">A fully responsive e-commerce platform with cart management, product filtering, and
+              smooth checkout flow built with React.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="js" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <span class="project-emoji">☀️</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-desc">Real-time weather app with location search, 7-day forecast, dynamic backgrounds, and
+              animated weather icons.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="css" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+              <span class="project-emoji">💼</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <h3 class="project-title">Agency Landing Page</h3>
+            <p class="project-desc">A high-converting agency landing page with glassmorphism UI, parallax effects, and
+              smooth scroll animations.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="react" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+              <span class="project-emoji">✅</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">localStorage</span>
+            </div>
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-desc">A productivity app with drag-and-drop tasks, categories, priority levels, and
+              persistent local storage.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="js" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+              <span class="project-emoji">🎵</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Audio</span>
+            </div>
+            <h3 class="project-title">Music Player UI</h3>
+            <p class="project-desc">A stunning music player with playlist management, visualizer, equalizer controls,
+              and glassmorphism design.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="css" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+              <span class="project-emoji">🍕</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+              <a href="#" class="project-link-btn" title="Source Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Restaurant Website</h3>
+            <p class="project-desc">A modern restaurant website with dynamic menu filtering, online booking form, and
+              delicious food gallery.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Let's work together on your next project!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let's talk about your <span class="gradient-text">project</span></h3>
+          <p>I'm currently available for freelance work and exciting full-time opportunities. If you have a project that
+            you want to get started, think you need my help, or just want to say hi — don't hesitate to reach out!</p>
+
+          <div class="contact-details">
+            <a href="mailto:shivam.bavda@email.com" class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>shivam.bavda003@email.com</span>
+              </div>
+            </a>
+            <a href="#" class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/shivambavda</span>
+              </div>
+            </a>
+            <a href="#" class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/shivambavda</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submit-btn">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" title="Twitter" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 <span class="gradient-text">Shivam Bavda</span>. Built with ❤️ using HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
